@@ -1,0 +1,15 @@
+@import url(./colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-d-1);
+    color: var(--txt-d-color2);
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
