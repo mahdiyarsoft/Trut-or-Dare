@@ -15,6 +15,7 @@ const form = document.getElementById("form");
 const ent = document.getElementById("ent");
 const ijad = document.getElementById("ijad");
 const spinerCircle = document.getElementById("spinerCircle");
+const h1Title = document.getElementById("h1Title");
 
 var names = [];
 var datacreate = [];
@@ -62,22 +63,28 @@ ent.addEventListener("click", () => {
     for (let i = 0; i < namesT; i++) {
         datacreate.push(1);
     };
-    form.style.justifyContent = "center";
-    ijad.classList.remove("hidden");
-    plus.classList.add("hidden");
-    name1.classList.add("hidden");
-    name2.classList.add("hidden");
-    name3.classList.add("hidden");
-    name4.classList.add("hidden");
-    name5.classList.add("hidden");
-    name6.classList.add("hidden");
-    name7.classList.add("hidden");
-    name8.classList.add("hidden");
-    name9.classList.add("hidden");
-    name10.classList.add("hidden");
-    name11.classList.add("hidden");
-    name12.classList.add("hidden");
-    ent.classList.add("hidden");
+    if (!name1.value == "" && !name2.value == "" && !name3.value == "") {
+        form.style.justifyContent = "center";
+        ijad.classList.remove("hidden");
+        plus.classList.add("hidden");
+        name1.classList.add("hidden");
+        name2.classList.add("hidden");
+        name3.classList.add("hidden");
+        name4.classList.add("hidden");
+        name5.classList.add("hidden");
+        name6.classList.add("hidden");
+        name7.classList.add("hidden");
+        name8.classList.add("hidden");
+        name9.classList.add("hidden");
+        name10.classList.add("hidden");
+        name11.classList.add("hidden");
+        name12.classList.add("hidden");
+        ent.classList.add("hidden");
+        h1Title.innerHTML = "Ready..?!";
+    } else {
+        alert("Enter 1,2,3,.. Players...")
+    };
+
 })
 
 // ----------------------

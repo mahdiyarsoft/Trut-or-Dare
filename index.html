@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -19,22 +20,22 @@
     </div>
     <div class="container hidden" id="spiner" onclick="spin()"></div>
     <form class="form" id="form">
-        <h1 class="h1-title">Players</h1>
-        <input type="text" placeholder="1" class="input" id="name1" required>
+        <h1 class="h1-title animate__animated animate__fadeInUp" id="h1Title">Players</h1>
+        <input type="text" placeholder="1" class="input" id="name1" required style="z-index: 10;">
         <input type="text" placeholder="2" class="input" id="name2" required>
-        <input type="text" placeholder="3" class="input" id="name3" required>
-        <input type="text" placeholder="4" class="input hidden" id="name4" required>
-        <input type="text" placeholder="5" class="input hidden" id="name5" required>
-        <input type="text" placeholder="6" class="input hidden" id="name6" required>
-        <input type="text" placeholder="7" class="input hidden" id="name7" required>
-        <input type="text" placeholder="8" class="input hidden" id="name8" required>
-        <input type="text" placeholder="9" class="input hidden" id="name9" required>
-        <input type="text" placeholder="10" class="input hidden" id="name10" required>
-        <input type="text" placeholder="11" class="input hidden" id="name11" required>
-        <input type="text" placeholder="12" class="input hidden" id="name12" required>
-        <div class="btn-plus input" id="plus" onclick="plus4()"></div>
-        <input type="button" class="input btn" value="Create " id="ent">
-        <input type="button" class="input btn hidden" value="Start" id="ijad" onclick="adddata()">
+        <input type="text" placeholder="3" class="input" id="name3" required style="z-index: 10;">
+        <input type="text" placeholder="4" class="input animate__animated animate__pulse hidden" id="name4" required>
+        <input type="text" placeholder="5" class="input animate__animated animate__pulse hidden" id="name5" required>
+        <input type="text" placeholder="6" class="input animate__animated animate__pulse hidden" id="name6" required>
+        <input type="text" placeholder="7" class="input animate__animated animate__pulse hidden" id="name7" required>
+        <input type="text" placeholder="8" class="input animate__animated animate__pulse hidden" id="name8" required>
+        <input type="text" placeholder="9" class="input animate__animated animate__pulse hidden" id="name9" required>
+        <input type="text" placeholder="10" class="input animate__animated animate__pulse hidden" id="name10" required>
+        <input type="text" placeholder="11" class="input animate__animated animate__pulse hidden" id="name11" required>
+        <input type="text" placeholder="12" class="input animate__animated animate__pulse hidden" id="name12" required>
+        <div class="btn-plus input animate__animated animate__fadeInDown animate__delay-1s" id="plus" style="z-index: 8;" onclick="plus4()"></div>
+        <input type="button" class="input btn animate__animated animate__fadeInDown animate__delay-2s" value="Create " id="ent">
+        <input type="button" class="input btn hidden animate__animated animate__fadeIn" value="Start" id="ijad" onclick="adddata()">
     </form>
     <script src="assets/js/chart.js"></script>
 
