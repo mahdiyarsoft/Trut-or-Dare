@@ -16,6 +16,7 @@ const ent = document.getElementById("ent");
 const ijad = document.getElementById("ijad");
 const spinerCircle = document.getElementById("spinerCircle");
 const h1Title = document.getElementById("h1Title");
+const gameBoard = document.getElementById("gameBoard");
 
 var names = [];
 var datacreate = [];
@@ -80,6 +81,7 @@ ent.addEventListener("click", () => {
         name11.classList.add("hidden");
         name12.classList.add("hidden");
         ent.classList.add("hidden");
+
         h1Title.innerHTML = "Ready..?!";
     } else {
         alert("Enter 1,2,3,.. Players...")
@@ -87,11 +89,9 @@ ent.addEventListener("click", () => {
 
 })
 
-// ----------------------
-
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'doughnut',
+    type: 'doughnut', // -------------> اینجا قراره مقدار بعد از(آنچنج شدن)
     data: {
         labels: [],
         datasets: [{

@@ -21,7 +21,7 @@ body {
     font-size: 20px;
     color: var(--txt-d-color2);
     padding: 2%;
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 1%;
     width: 20%;
     height: 20%;
@@ -48,6 +48,15 @@ body {
     background-color: var(--color-d-4);
     font-size: 25px;
     font-weight: 900;
+}
+
+#ijad {
+    width: 24%;
+    height: 20%;
+    max-height: 65px;
+    min-height: 55px;
+    min-width: 250px;
+    border-radius: 5px;
 }
 
 .btn-plus {
