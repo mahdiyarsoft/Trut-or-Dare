@@ -91,7 +91,7 @@ ent.addEventListener("click", () => {
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'doughnut', // -------------> اینجا قراره مقدار بعد از(آنچنج شدن)
+    type: 'doughnut',
     data: {
         labels: [],
         datasets: [{
@@ -151,22 +151,16 @@ var myChart = new Chart(ctx, {
                 }
             }]
         }
-        // plugins: [ChartDataLabels]
     }
-
-
 });
 
 function adddata() {
     myChart.data.datasets[0].data = datacreate;
     myChart.data.labels = names;
+
     myChart.update();
 
 }
-
-
-// --------------------------------------------
-// --------------------------------------------
 
 
 function plus4() {
