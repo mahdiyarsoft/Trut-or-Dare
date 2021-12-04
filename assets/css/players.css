@@ -14,31 +14,31 @@ body {
 }
 
 .form {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
-    height: 100%;
-    width: 100%;
 }
 
 .input {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 200;
+    background-color: var(--color-d-2);
     color: var(--txt-d-color2);
-    padding: 2%;
-    border-radius: 10px;
-    margin: 1%;
     width: 20%;
     height: 20%;
     max-height: 65px;
     min-height: 55px;
     min-width: 250px;
-    background-color: var(--color-d-2);
-    border: 0.5px solid rgb(65, 65, 65);
-    outline: none;
     font-family: 'yekan';
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    border: 0.5px solid rgb(65, 65, 65);
+    border-radius: 10px;
+    outline: none;
     transition: all ease 0.3s;
 }
 
@@ -48,13 +48,13 @@ body {
 }
 
 .btn {
-    font-family: 'Josefin Sans', sans-serif !important;
-    cursor: pointer;
-    text-align: center;
-    padding: 0;
     background-color: var(--color-d-4);
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif !important;
     font-size: 25px;
     font-weight: 900;
+    text-align: center;
 }
 
 #ijad {
@@ -67,12 +67,12 @@ body {
 }
 
 .btn-plus {
-    padding: 0;
     background: url(../icon/49-plus-circle-outline.png);
     background-color: var(--color-d-4);
-    background-repeat: no-repeat;
     background-size: 20%;
     background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
     cursor: pointer;
 }
 
@@ -95,11 +95,11 @@ body {
 }
 
 .spinerCircle {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .myChart {
@@ -108,11 +108,11 @@ body {
 }
 
 .container {
-    position: absolute;
-    background: url(../icon/bottle.png);
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: center;
     width: 50px;
     height: 210px;
+    position: absolute;
+    background: url(../icon/bottle.png);
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
 }
