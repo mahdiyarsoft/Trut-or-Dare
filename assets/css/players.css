@@ -1,111 +1,118 @@
-    @import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css');
-    body {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column nowrap;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .input {
-        text-align: center;
-        font-size: 16px;
-        font-weight: 200;
-        color: var(--txt-d-color2);
-        padding: 2%;
-        border-radius: 10px;
-        margin: 1%;
-        width: 20%;
-        height: 20%;
-        max-height: 65px;
-        min-height: 55px;
-        min-width: 250px;
-        background-color: var(--color-d-2);
-        border: 0.5px solid rgb(65, 65, 65);
-        outline: none;
-        font-family: 'yekan';
-        transition: all ease 0.3s;
-    }
-    
-    .input:hover {
-        width: 23%;
-        box-shadow: rgb(0, 0, 0) 0px 0px 15px;
-    }
-    
-    .btn {
-        font-family: 'Josefin Sans', sans-serif !important;
-        cursor: pointer;
-        text-align: center;
-        padding: 0;
-        background-color: var(--color-d-4);
-        font-size: 25px;
-        font-weight: 900;
-    }
-    
-    #ijad {
-        width: 24%;
-        height: 20%;
-        max-height: 65px;
-        min-height: 55px;
-        min-width: 250px;
-        border-radius: 5px;
-    }
-    
-    .btn-plus {
-        padding: 0;
-        background: url(../icon/49-plus-circle-outline.png);
-        background-color: var(--color-d-4);
-        background-repeat: no-repeat;
-        background-size: 20%;
-        background-position: center;
-        cursor: pointer;
-    }
-    
-    .btn-plus:hover {
-        background: url(../icon/49-plus-circle-outline.gif);
-        background-color: var(--color-d-4);
-        background-repeat: no-repeat;
-        background-size: 20%;
-        background-position: center;
-    }
-    
-    .h1-title {
-        width: 100%;
-        font-size: 50px;
-        text-align: center;
-    }
-    
-    .hidden {
-        display: none !important;
-    }
-    
-    .spinerCircle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .myChart {
-        width: 650px !important;
-        height: auto !important;
-    }
-    
-    .container {
-        position: absolute;
-        background: url(../icon/bottle.png);
-        background-repeat: no-repeat;
-        background-size: 50px;
-        background-position: center;
-        width: 50px;
-        height: 210px;
-    }
+/*  
+=====================================
+== PROGRAMMED BY MAHDIYAR S.AHMADI ==
+==     2021 - FIRST JS PROJECT     ==
+=====================================
+ */
+
+@import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css');
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+}
+
+.input {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--txt-d-color2);
+    padding: 2%;
+    border-radius: 10px;
+    margin: 1%;
+    width: 20%;
+    height: 20%;
+    max-height: 65px;
+    min-height: 55px;
+    min-width: 250px;
+    background-color: var(--color-d-2);
+    border: 0.5px solid rgb(65, 65, 65);
+    outline: none;
+    font-family: 'yekan';
+    transition: all ease 0.3s;
+}
+
+.input:hover {
+    width: 23%;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif !important;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    background-color: var(--color-d-4);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#ijad {
+    width: 24%;
+    height: 20%;
+    max-height: 65px;
+    min-height: 55px;
+    min-width: 250px;
+    border-radius: 5px;
+}
+
+.btn-plus {
+    padding: 0;
+    background: url(../icon/49-plus-circle-outline.png);
+    background-color: var(--color-d-4);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-plus:hover {
+    background: url(../icon/49-plus-circle-outline.gif);
+    background-color: var(--color-d-4);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+}
+
+.h1-title {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.spinerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.myChart {
+    width: 650px !important;
+    height: auto !important;
+}
+
+.container {
+    position: absolute;
+    background: url(../icon/bottle.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    width: 50px;
+    height: 210px;
+}

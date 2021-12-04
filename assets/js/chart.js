@@ -1,3 +1,13 @@
+//  =====================================
+//  == PROGRAMMED BY MAHDIYAR S.AHMADI ==
+//  ==     2021 - FIRST JS PROJECT     ==
+//  =====================================
+
+
+//  ======================================
+//  == GET ELEMENT AND SET VAR OR CONST ==
+//  ======================================
+
 const name1 = document.getElementById("name1");
 const name2 = document.getElementById("name2");
 const name3 = document.getElementById("name3");
@@ -19,72 +29,79 @@ const h1Title = document.getElementById("h1Title");
 const gameBoard = document.getElementById("gameBoard");
 var names = [];
 var datacreate = [];
-ent.addEventListener("click", () => {
-    names = [];
-    datacreate = [];
-    if (!name1.value == "") {
-        names.push(name1.value);
-    };
-    if (!name2.value == "") {
-        names.push(name2.value);
-    };
-    if (!name3.value == "") {
-        names.push(name3.value);
-    };
-    if (!name4.value == "") {
-        names.push(name4.value);
-    };
-    if (!name5.value == "") {
-        names.push(name5.value);
-    };
-    if (!name6.value == "") {
-        names.push(name6.value);
-    };
-    if (!name7.value == "") {
-        names.push(name7.value);
-    };
-    if (!name8.value == "") {
-        names.push(name8.value);
-    };
-    if (!name9.value == "") {
-        names.push(name9.value);
-    };
-    if (!name10.value == "") {
-        names.push(name10.value);
-    };
-    if (!name11.value == "") {
-        names.push(name11.value);
-    };
-    if (!name12.value == "") {
-        names.push(name12.value);
-    };
-    var namesT = names.length;
-    for (let i = 0; i < namesT; i++) {
-        datacreate.push(1);
-    };
-    if (!name1.value == "" && !name2.value == "" && !name3.value == "") {
-        form.style.justifyContent = "center";
-        ijad.classList.remove("hidden");
-        plus.classList.add("hidden");
-        name1.classList.add("hidden");
-        name2.classList.add("hidden");
-        name3.classList.add("hidden");
-        name4.classList.add("hidden");
-        name5.classList.add("hidden");
-        name6.classList.add("hidden");
-        name7.classList.add("hidden");
-        name8.classList.add("hidden");
-        name9.classList.add("hidden");
-        name10.classList.add("hidden");
-        name11.classList.add("hidden");
-        name12.classList.add("hidden");
-        ent.classList.add("hidden");
-        h1Title.innerHTML = "Ready..?!";
-    } else {
-        alert("Enter 1,2,3,.. Players...")
-    };
+//  =================================
+//  == SET NEW CHART LABELS & DATA ==
+//  =================================
 
-})
+ent.addEventListener("click", () => {
+        names = [];
+        datacreate = [];
+        if (!name1.value == "") {
+            names.push(name1.value);
+        };
+        if (!name2.value == "") {
+            names.push(name2.value);
+        };
+        if (!name3.value == "") {
+            names.push(name3.value);
+        };
+        if (!name4.value == "") {
+            names.push(name4.value);
+        };
+        if (!name5.value == "") {
+            names.push(name5.value);
+        };
+        if (!name6.value == "") {
+            names.push(name6.value);
+        };
+        if (!name7.value == "") {
+            names.push(name7.value);
+        };
+        if (!name8.value == "") {
+            names.push(name8.value);
+        };
+        if (!name9.value == "") {
+            names.push(name9.value);
+        };
+        if (!name10.value == "") {
+            names.push(name10.value);
+        };
+        if (!name11.value == "") {
+            names.push(name11.value);
+        };
+        if (!name12.value == "") {
+            names.push(name12.value);
+        };
+        var namesT = names.length;
+        for (let i = 0; i < namesT; i++) {
+            datacreate.push(1);
+        };
+        if (!name1.value == "" && !name2.value == "" && !name3.value == "") {
+            form.style.justifyContent = "center";
+            ijad.classList.remove("hidden");
+            plus.classList.add("hidden");
+            name1.classList.add("hidden");
+            name2.classList.add("hidden");
+            name3.classList.add("hidden");
+            name4.classList.add("hidden");
+            name5.classList.add("hidden");
+            name6.classList.add("hidden");
+            name7.classList.add("hidden");
+            name8.classList.add("hidden");
+            name9.classList.add("hidden");
+            name10.classList.add("hidden");
+            name11.classList.add("hidden");
+            name12.classList.add("hidden");
+            ent.classList.add("hidden");
+            h1Title.innerHTML = "Ready..?!";
+        } else {
+            alert("Enter 1,2,3,.. Players...")
+        };
+
+    })
+    //  ==================================
+    //  == CREATE SPIN BOARD (CHART JS) ==
+    //  ==================================
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
@@ -151,14 +168,19 @@ var myChart = new Chart(ctx, {
     }
 });
 
+//  =================================
+//  == SET NEW CHART LABELS & DATA ==
+//  =================================
+
 function adddata() {
     myChart.data.datasets[0].data = datacreate;
     myChart.data.labels = names;
-
     myChart.update();
-
 }
 
+//  ===================================
+//  == ENTER PLAYER'S - INPUT FILDES ==
+//  ===================================
 
 function plus4() {
     name4.classList.remove("hidden");
@@ -207,11 +229,14 @@ function plus12() {
     plus.classList.add("hidden");
 }
 ijad.addEventListener("click", () => {
-    spinerCircle.classList.remove("hidden");
-    document.getElementById("spiner").classList.remove("hidden");
-    form.classList.add("hidden");
+        spinerCircle.classList.remove("hidden");
+        document.getElementById("spiner").classList.remove("hidden");
+        form.classList.add("hidden");
 
-})
+    })
+    //  =================================
+    //  ==         SPIN SCRIPT         ==
+    //  =================================
 
 function spin() {
     const spinSfx = document.getElementById("spinSfx");
