@@ -17,10 +17,8 @@ const ijad = document.getElementById("ijad");
 const spinerCircle = document.getElementById("spinerCircle");
 const h1Title = document.getElementById("h1Title");
 const gameBoard = document.getElementById("gameBoard");
-
 var names = [];
 var datacreate = [];
-
 ent.addEventListener("click", () => {
     names = [];
     datacreate = [];
@@ -81,7 +79,6 @@ ent.addEventListener("click", () => {
         name11.classList.add("hidden");
         name12.classList.add("hidden");
         ent.classList.add("hidden");
-
         h1Title.innerHTML = "Ready..?!";
     } else {
         alert("Enter 1,2,3,.. Players...")
@@ -177,7 +174,6 @@ function plus6() {
     name6.classList.remove("hidden");
     plus.setAttribute("onclick", "plus7()");
     form.style.justifyContent = "flex-start";
-
 }
 
 function plus7() {
@@ -218,10 +214,16 @@ ijad.addEventListener("click", () => {
 })
 
 function spin() {
+    const spinSfx = document.getElementById("spinSfx");
+    const endSfx = document.getElementById("endSfx");
+    spinSfx.play();
+    setTimeout(esf, 2750);
 
+    function esf() {
+        endSfx.play();
+    }
     var x4 = Math.floor(Math.random() * (5000 - 2000) + 2000);
-    var time = Math.floor(Math.random() * (4000 - 2000) + 2000);
-
+    var time = 2647;
     document.getElementById("spiner").animate([{
         transform: 'rotate(0deg)'
     }, {
